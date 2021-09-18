@@ -1,0 +1,4 @@
+Stats for 10 PCs in star topology, with 50 pings issued in a 5Neighbours test way.
+Average without taking in account Loss : 47.5206271186
+Average with weight of Loss : 46.7286166667
+Average of Packet Loss : 0.0

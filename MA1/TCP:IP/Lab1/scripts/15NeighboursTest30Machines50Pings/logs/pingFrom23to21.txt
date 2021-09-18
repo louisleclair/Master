@@ -1,0 +1,33 @@
+PING 10.10.21.1 (10.10.21.1) 56(84) bytes of data.
+From 10.10.23.1 icmp_seq=9 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=10 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=12 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=13 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=15 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=18 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=19 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=21 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=24 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=25 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=27 Destination Host Unreachable
+From 10.10.23.254 icmp_seq=3 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=30 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=31 Destination Host Unreachable
+64 bytes from 10.10.21.1: icmp_seq=1 ttl=63 time=42267 ms
+64 bytes from 10.10.21.1: icmp_seq=2 ttl=63 time=43114 ms
+64 bytes from 10.10.21.1: icmp_seq=44 ttl=63 time=694 ms
+64 bytes from 10.10.21.1: icmp_seq=7 ttl=63 time=38382 ms
+64 bytes from 10.10.21.1: icmp_seq=45 ttl=63 time=0.141 ms
+64 bytes from 10.10.21.1: icmp_seq=4 ttl=63 time=42134 ms
+64 bytes from 10.10.21.1: icmp_seq=46 ttl=63 time=0.903 ms
+64 bytes from 10.10.21.1: icmp_seq=47 ttl=63 time=0.274 ms
+64 bytes from 10.10.21.1: icmp_seq=48 ttl=63 time=0.843 ms
+64 bytes from 10.10.21.1: icmp_seq=8 ttl=63 time=40570 ms
+64 bytes from 10.10.21.1: icmp_seq=49 ttl=63 time=0.112 ms
+64 bytes from 10.10.21.1: icmp_seq=50 ttl=63 time=0.647 ms
+64 bytes from 10.10.21.1: icmp_seq=5 ttl=63 time=50487 ms
+64 bytes from 10.10.21.1: icmp_seq=6 ttl=63 time=56844 ms
+
+--- 10.10.21.1 ping statistics ---
+50 packets transmitted, 14 received, +14 errors, 72% packet loss, time 49614ms
+rtt min/avg/max/mdev = 0.112/22464.129/56844.542/22765.343 ms, pipe 46

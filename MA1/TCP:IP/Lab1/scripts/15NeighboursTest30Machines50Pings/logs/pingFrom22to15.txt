@@ -1,0 +1,37 @@
+PING 10.10.15.1 (10.10.15.1) 56(84) bytes of data.
+From 10.10.22.1 icmp_seq=8 Destination Host Unreachable
+From 10.10.22.1 icmp_seq=9 Destination Host Unreachable
+From 10.10.22.1 icmp_seq=11 Destination Host Unreachable
+From 10.10.22.1 icmp_seq=12 Destination Host Unreachable
+From 10.10.22.1 icmp_seq=15 Destination Host Unreachable
+From 10.10.22.1 icmp_seq=18 Destination Host Unreachable
+From 10.10.22.1 icmp_seq=21 Destination Host Unreachable
+From 10.10.22.1 icmp_seq=22 Destination Host Unreachable
+From 10.10.22.1 icmp_seq=24 Destination Host Unreachable
+From 10.10.22.1 icmp_seq=25 Destination Host Unreachable
+64 bytes from 10.10.15.1: icmp_seq=1 ttl=63 time=31968 ms
+64 bytes from 10.10.15.1: icmp_seq=33 ttl=63 time=0.202 ms
+64 bytes from 10.10.15.1: icmp_seq=7 ttl=63 time=26620 ms
+64 bytes from 10.10.15.1: icmp_seq=2 ttl=63 time=32468 ms
+64 bytes from 10.10.15.1: icmp_seq=34 ttl=63 time=0.107 ms
+64 bytes from 10.10.15.1: icmp_seq=35 ttl=63 time=0.726 ms
+64 bytes from 10.10.15.1: icmp_seq=36 ttl=63 time=0.355 ms
+64 bytes from 10.10.15.1: icmp_seq=3 ttl=63 time=34471 ms
+64 bytes from 10.10.15.1: icmp_seq=37 ttl=63 time=0.126 ms
+64 bytes from 10.10.15.1: icmp_seq=38 ttl=63 time=0.718 ms
+64 bytes from 10.10.15.1: icmp_seq=27 ttl=63 time=11319 ms
+64 bytes from 10.10.15.1: icmp_seq=28 ttl=63 time=10454 ms
+64 bytes from 10.10.15.1: icmp_seq=29 ttl=63 time=9839 ms
+64 bytes from 10.10.15.1: icmp_seq=39 ttl=63 time=0.122 ms
+64 bytes from 10.10.15.1: icmp_seq=40 ttl=63 time=0.144 ms
+64 bytes from 10.10.15.1: icmp_seq=30 ttl=63 time=11089 ms
+64 bytes from 10.10.15.1: icmp_seq=31 ttl=63 time=11478 ms
+64 bytes from 10.10.15.1: icmp_seq=32 ttl=63 time=11543 ms
+64 bytes from 10.10.15.1: icmp_seq=4 ttl=63 time=46293 ms
+From 10.10.22.254 icmp_seq=50 Destination Host Unreachable
+64 bytes from 10.10.15.1: icmp_seq=5 ttl=63 time=55128 ms
+64 bytes from 10.10.15.1: icmp_seq=6 ttl=63 time=67499 ms
+
+--- 10.10.15.1 ping statistics ---
+50 packets transmitted, 21 received, +11 errors, 58% packet loss, time 49571ms
+rtt min/avg/max/mdev = 0.107/17151.334/67499.752/19828.156 ms, pipe 46

@@ -1,0 +1,4 @@
+Stats for 20 PCs in star topology, with 50 pings issued in a Circular test way.
+Average without taking in account Loss : 1.22936842105
+Average with weight of Loss : 1.1679
+Average of Packet Loss : 0.0

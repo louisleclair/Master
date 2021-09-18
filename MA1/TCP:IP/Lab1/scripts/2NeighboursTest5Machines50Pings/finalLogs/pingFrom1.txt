@@ -1,0 +1,6 @@
+--- 10.10.0.1 ping statistics ---
+50 packets transmitted, 50 received, 0% packet loss, time 50139ms
+rtt min/avg/max/mdev = 0.018/9.275/460.298/64.431 ms
+--- 10.10.2.1 ping statistics ---
+50 packets transmitted, 50 received, 0% packet loss, time 50130ms
+rtt min/avg/max/mdev = 0.018/8.148/404.503/56.622 ms

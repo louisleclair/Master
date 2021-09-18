@@ -1,0 +1,10 @@
+PING 10.10.14.1 (10.10.14.1) 56(84) bytes of data.
+From 10.10.10.1 icmp_seq=46 Destination Host Unreachable
+From 10.10.10.1 icmp_seq=47 Destination Host Unreachable
+From 10.10.10.1 icmp_seq=48 Destination Host Unreachable
+From 10.10.10.1 icmp_seq=49 Destination Host Unreachable
+From 10.10.10.1 icmp_seq=50 Destination Host Unreachable
+
+--- 10.10.14.1 ping statistics ---
+50 packets transmitted, 0 received, +5 errors, 100% packet loss, time 50007ms
+pipe 3

@@ -1,0 +1,48 @@
+--- 10.10.10.1 ping statistics ---
+50 packets transmitted, 0 received, 100% packet loss, time 50177ms
+
+--- 10.10.11.1 ping statistics ---
+50 packets transmitted, 0 received, 100% packet loss, time 50180ms
+
+--- 10.10.12.1 ping statistics ---
+50 packets transmitted, 0 received, 100% packet loss, time 50154ms
+
+--- 10.10.14.1 ping statistics ---
+50 packets transmitted, 0 received, 100% packet loss, time 50169ms
+
+--- 10.10.15.1 ping statistics ---
+50 packets transmitted, 0 received, 100% packet loss, time 50176ms
+
+--- 10.10.16.1 ping statistics ---
+50 packets transmitted, 0 received, 100% packet loss, time 50165ms
+
+--- 10.10.17.1 ping statistics ---
+50 packets transmitted, 0 received, 100% packet loss, time 50154ms
+
+--- 10.10.18.1 ping statistics ---
+50 packets transmitted, 0 received, 100% packet loss, time 50177ms
+
+--- 10.10.19.1 ping statistics ---
+50 packets transmitted, 0 received, 100% packet loss, time 50170ms
+
+--- 10.10.20.1 ping statistics ---
+50 packets transmitted, 0 received, 100% packet loss, time 50164ms
+
+--- 10.10.21.1 ping statistics ---
+50 packets transmitted, 0 received, 100% packet loss, time 50180ms
+
+--- 10.10.5.1 ping statistics ---
+50 packets transmitted, 0 received, 100% packet loss, time 50156ms
+
+--- 10.10.6.1 ping statistics ---
+50 packets transmitted, 0 received, 100% packet loss, time 50177ms
+
+--- 10.10.7.1 ping statistics ---
+50 packets transmitted, 0 received, 100% packet loss, time 50171ms
+
+--- 10.10.8.1 ping statistics ---
+50 packets transmitted, 0 received, 100% packet loss, time 50169ms
+
+--- 10.10.9.1 ping statistics ---
+50 packets transmitted, 0 received, 100% packet loss, time 50166ms
+

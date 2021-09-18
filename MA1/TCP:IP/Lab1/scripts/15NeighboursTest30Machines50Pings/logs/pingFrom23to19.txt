@@ -1,0 +1,33 @@
+PING 10.10.19.1 (10.10.19.1) 56(84) bytes of data.
+From 10.10.23.1 icmp_seq=9 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=10 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=12 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=15 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=18 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=21 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=24 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=27 Destination Host Unreachable
+From 10.10.23.254 icmp_seq=3 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=30 Destination Host Unreachable
+From 10.10.23.254 icmp_seq=4 Destination Host Unreachable
+64 bytes from 10.10.19.1: icmp_seq=1 ttl=63 time=47959 ms
+64 bytes from 10.10.19.1: icmp_seq=49 ttl=63 time=0.441 ms
+64 bytes from 10.10.19.1: icmp_seq=50 ttl=63 time=0.387 ms
+64 bytes from 10.10.19.1: icmp_seq=5 ttl=63 time=49080 ms
+64 bytes from 10.10.19.1: icmp_seq=6 ttl=63 time=57785 ms
+64 bytes from 10.10.19.1: icmp_seq=40 ttl=63 time=25620 ms
+64 bytes from 10.10.19.1: icmp_seq=41 ttl=63 time=24796 ms
+64 bytes from 10.10.19.1: icmp_seq=42 ttl=63 time=23964 ms
+64 bytes from 10.10.19.1: icmp_seq=43 ttl=63 time=23694 ms
+64 bytes from 10.10.19.1: icmp_seq=44 ttl=63 time=24774 ms
+64 bytes from 10.10.19.1: icmp_seq=7 ttl=63 time=62675 ms
+64 bytes from 10.10.19.1: icmp_seq=45 ttl=63 time=25072 ms
+64 bytes from 10.10.19.1: icmp_seq=2 ttl=63 time=69332 ms
+64 bytes from 10.10.19.1: icmp_seq=46 ttl=63 time=25477 ms
+64 bytes from 10.10.19.1: icmp_seq=47 ttl=63 time=26269 ms
+64 bytes from 10.10.19.1: icmp_seq=8 ttl=63 time=66357 ms
+64 bytes from 10.10.19.1: icmp_seq=48 ttl=63 time=26724 ms
+
+--- 10.10.19.1 ping statistics ---
+50 packets transmitted, 17 received, +11 errors, 66% packet loss, time 49660ms
+rtt min/avg/max/mdev = 0.387/34093.246/69332.700/20478.770 ms, pipe 49

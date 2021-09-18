@@ -1,0 +1,7 @@
+PING 10.10.28.1 (10.10.28.1) 56(84) bytes of data.
+From 10.10.3.1 icmp_seq=30 Destination Host Unreachable
+From 10.10.3.1 icmp_seq=31 Destination Host Unreachable
+
+--- 10.10.28.1 ping statistics ---
+50 packets transmitted, 0 received, +2 errors, 100% packet loss, time 50092ms
+pipe 3

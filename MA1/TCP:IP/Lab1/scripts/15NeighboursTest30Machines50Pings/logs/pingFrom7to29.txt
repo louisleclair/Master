@@ -1,0 +1,16 @@
+PING 10.10.29.1 (10.10.29.1) 56(84) bytes of data.
+64 bytes from 10.10.29.1: icmp_seq=1 ttl=63 time=22758 ms
+64 bytes from 10.10.29.1: icmp_seq=8 ttl=63 time=19445 ms
+64 bytes from 10.10.29.1: icmp_seq=9 ttl=63 time=21593 ms
+64 bytes from 10.10.29.1: icmp_seq=43 ttl=63 time=2543 ms
+64 bytes from 10.10.29.1: icmp_seq=44 ttl=63 time=1521 ms
+64 bytes from 10.10.29.1: icmp_seq=45 ttl=63 time=497 ms
+64 bytes from 10.10.29.1: icmp_seq=46 ttl=63 time=0.084 ms
+64 bytes from 10.10.29.1: icmp_seq=47 ttl=63 time=0.323 ms
+64 bytes from 10.10.29.1: icmp_seq=48 ttl=63 time=0.316 ms
+64 bytes from 10.10.29.1: icmp_seq=49 ttl=63 time=1.19 ms
+64 bytes from 10.10.29.1: icmp_seq=50 ttl=63 time=0.098 ms
+
+--- 10.10.29.1 ping statistics ---
+50 packets transmitted, 11 received, 78% packet loss, time 50028ms
+rtt min/avg/max/mdev = 0.084/6214.735/22758.066/9276.199 ms, pipe 23

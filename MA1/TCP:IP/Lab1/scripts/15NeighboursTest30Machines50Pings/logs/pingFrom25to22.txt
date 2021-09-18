@@ -1,0 +1,24 @@
+PING 10.10.22.1 (10.10.22.1) 56(84) bytes of data.
+From 10.10.25.1 icmp_seq=16 Destination Host Unreachable
+From 10.10.25.1 icmp_seq=19 Destination Host Unreachable
+From 10.10.25.1 icmp_seq=25 Destination Host Unreachable
+From 10.10.25.1 icmp_seq=28 Destination Host Unreachable
+From 10.10.25.1 icmp_seq=31 Destination Host Unreachable
+64 bytes from 10.10.22.1: icmp_seq=1 ttl=63 time=35797 ms
+64 bytes from 10.10.22.1: icmp_seq=7 ttl=63 time=29969 ms
+64 bytes from 10.10.22.1: icmp_seq=37 ttl=63 time=0.041 ms
+64 bytes from 10.10.22.1: icmp_seq=38 ttl=63 time=0.288 ms
+64 bytes from 10.10.22.1: icmp_seq=39 ttl=63 time=0.248 ms
+64 bytes from 10.10.22.1: icmp_seq=49 ttl=63 time=232 ms
+64 bytes from 10.10.22.1: icmp_seq=34 ttl=63 time=15770 ms
+64 bytes from 10.10.22.1: icmp_seq=35 ttl=63 time=14884 ms
+64 bytes from 10.10.22.1: icmp_seq=36 ttl=63 time=14004 ms
+64 bytes from 10.10.22.1: icmp_seq=50 ttl=63 time=0.062 ms
+From 10.10.25.254 icmp_seq=43 Destination Host Unreachable
+From 10.10.25.254 icmp_seq=44 Destination Host Unreachable
+From 10.10.25.254 icmp_seq=45 Destination Host Unreachable
+From 10.10.25.254 icmp_seq=46 Destination Host Unreachable
+
+--- 10.10.22.1 ping statistics ---
+50 packets transmitted, 10 received, +9 errors, 80% packet loss, time 49765ms
+rtt min/avg/max/mdev = 0.041/11065.878/35797.344/12733.839 ms, pipe 36

@@ -1,0 +1,36 @@
+PING 10.10.17.1 (10.10.17.1) 56(84) bytes of data.
+From 10.10.23.1 icmp_seq=9 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=10 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=12 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=13 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=15 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=16 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=18 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=19 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=21 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=22 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=24 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=25 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=27 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=28 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=30 Destination Host Unreachable
+From 10.10.23.1 icmp_seq=31 Destination Host Unreachable
+64 bytes from 10.10.17.1: icmp_seq=1 ttl=63 time=39598 ms
+64 bytes from 10.10.17.1: icmp_seq=3 ttl=63 time=38347 ms
+64 bytes from 10.10.17.1: icmp_seq=2 ttl=63 time=40291 ms
+64 bytes from 10.10.17.1: icmp_seq=6 ttl=63 time=37856 ms
+64 bytes from 10.10.17.1: icmp_seq=44 ttl=63 time=2117 ms
+64 bytes from 10.10.17.1: icmp_seq=45 ttl=63 time=1102 ms
+64 bytes from 10.10.17.1: icmp_seq=46 ttl=63 time=78.8 ms
+64 bytes from 10.10.17.1: icmp_seq=7 ttl=63 time=40008 ms
+64 bytes from 10.10.17.1: icmp_seq=47 ttl=63 time=0.123 ms
+64 bytes from 10.10.17.1: icmp_seq=48 ttl=63 time=0.626 ms
+64 bytes from 10.10.17.1: icmp_seq=4 ttl=63 time=44711 ms
+64 bytes from 10.10.17.1: icmp_seq=49 ttl=63 time=0.225 ms
+64 bytes from 10.10.17.1: icmp_seq=8 ttl=63 time=41656 ms
+64 bytes from 10.10.17.1: icmp_seq=50 ttl=63 time=0.193 ms
+64 bytes from 10.10.17.1: icmp_seq=5 ttl=63 time=52742 ms
+
+--- 10.10.17.1 ping statistics ---
+50 packets transmitted, 15 received, +16 errors, 70% packet loss, time 49569ms
+rtt min/avg/max/mdev = 0.123/22567.497/52742.958/20941.554 ms, pipe 46

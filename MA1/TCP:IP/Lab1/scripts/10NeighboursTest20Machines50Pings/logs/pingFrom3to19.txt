@@ -1,0 +1,49 @@
+PING 10.10.19.1 (10.10.19.1) 56(84) bytes of data.
+64 bytes from 10.10.19.1: icmp_seq=1 ttl=63 time=6166 ms
+64 bytes from 10.10.19.1: icmp_seq=4 ttl=63 time=3264 ms
+64 bytes from 10.10.19.1: icmp_seq=8 ttl=63 time=0.153 ms
+64 bytes from 10.10.19.1: icmp_seq=2 ttl=63 time=6351 ms
+64 bytes from 10.10.19.1: icmp_seq=9 ttl=63 time=0.131 ms
+64 bytes from 10.10.19.1: icmp_seq=3 ttl=63 time=6339 ms
+64 bytes from 10.10.19.1: icmp_seq=5 ttl=63 time=5003 ms
+64 bytes from 10.10.19.1: icmp_seq=6 ttl=63 time=6168 ms
+64 bytes from 10.10.19.1: icmp_seq=7 ttl=63 time=7048 ms
+64 bytes from 10.10.19.1: icmp_seq=16 ttl=63 time=485 ms
+64 bytes from 10.10.19.1: icmp_seq=17 ttl=63 time=0.107 ms
+64 bytes from 10.10.19.1: icmp_seq=18 ttl=63 time=0.039 ms
+64 bytes from 10.10.19.1: icmp_seq=19 ttl=63 time=0.103 ms
+64 bytes from 10.10.19.1: icmp_seq=20 ttl=63 time=0.203 ms
+64 bytes from 10.10.19.1: icmp_seq=21 ttl=63 time=0.044 ms
+64 bytes from 10.10.19.1: icmp_seq=22 ttl=63 time=0.510 ms
+64 bytes from 10.10.19.1: icmp_seq=23 ttl=63 time=0.040 ms
+64 bytes from 10.10.19.1: icmp_seq=24 ttl=63 time=0.032 ms
+64 bytes from 10.10.19.1: icmp_seq=25 ttl=63 time=0.071 ms
+64 bytes from 10.10.19.1: icmp_seq=26 ttl=63 time=0.053 ms
+64 bytes from 10.10.19.1: icmp_seq=27 ttl=63 time=0.082 ms
+64 bytes from 10.10.19.1: icmp_seq=28 ttl=63 time=0.080 ms
+64 bytes from 10.10.19.1: icmp_seq=29 ttl=63 time=0.029 ms
+64 bytes from 10.10.19.1: icmp_seq=30 ttl=63 time=0.045 ms
+64 bytes from 10.10.19.1: icmp_seq=31 ttl=63 time=0.037 ms
+64 bytes from 10.10.19.1: icmp_seq=32 ttl=63 time=0.163 ms
+64 bytes from 10.10.19.1: icmp_seq=33 ttl=63 time=0.042 ms
+64 bytes from 10.10.19.1: icmp_seq=34 ttl=63 time=0.120 ms
+64 bytes from 10.10.19.1: icmp_seq=35 ttl=63 time=0.038 ms
+64 bytes from 10.10.19.1: icmp_seq=36 ttl=63 time=0.146 ms
+64 bytes from 10.10.19.1: icmp_seq=37 ttl=63 time=0.038 ms
+64 bytes from 10.10.19.1: icmp_seq=38 ttl=63 time=0.066 ms
+64 bytes from 10.10.19.1: icmp_seq=39 ttl=63 time=0.150 ms
+64 bytes from 10.10.19.1: icmp_seq=40 ttl=63 time=0.065 ms
+64 bytes from 10.10.19.1: icmp_seq=41 ttl=63 time=0.044 ms
+64 bytes from 10.10.19.1: icmp_seq=42 ttl=63 time=0.056 ms
+64 bytes from 10.10.19.1: icmp_seq=43 ttl=63 time=0.077 ms
+64 bytes from 10.10.19.1: icmp_seq=44 ttl=63 time=0.038 ms
+64 bytes from 10.10.19.1: icmp_seq=45 ttl=63 time=0.074 ms
+64 bytes from 10.10.19.1: icmp_seq=46 ttl=63 time=0.059 ms
+64 bytes from 10.10.19.1: icmp_seq=47 ttl=63 time=0.040 ms
+64 bytes from 10.10.19.1: icmp_seq=48 ttl=63 time=0.031 ms
+64 bytes from 10.10.19.1: icmp_seq=49 ttl=63 time=0.038 ms
+64 bytes from 10.10.19.1: icmp_seq=50 ttl=63 time=0.054 ms
+
+--- 10.10.19.1 ping statistics ---
+50 packets transmitted, 44 received, 12% packet loss, time 49896ms
+rtt min/avg/max/mdev = 0.029/927.988/7048.044/2154.952 ms, pipe 7

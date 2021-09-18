@@ -1,0 +1,9 @@
+--- 10.10.14.1 ping statistics ---
+50 packets transmitted, 47 received, 6% packet loss, time 49995ms
+rtt min/avg/max/mdev = 0.031/504.740/6861.539/1480.020 ms, pipe 7
+--- 10.10.15.1 ping statistics ---
+50 packets transmitted, 47 received, 6% packet loss, time 49962ms
+rtt min/avg/max/mdev = 0.029/519.143/6954.270/1489.491 ms, pipe 7
+--- 10.10.16.1 ping statistics ---
+50 packets transmitted, 47 received, 6% packet loss, time 49841ms
+rtt min/avg/max/mdev = 0.038/603.525/7060.322/1592.584 ms, pipe 7

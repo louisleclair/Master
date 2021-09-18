@@ -1,0 +1,10 @@
+PING 10.10.19.1 (10.10.19.1) 56(84) bytes of data.
+64 bytes from 10.10.19.1: icmp_seq=43 ttl=63 time=13334 ms
+64 bytes from 10.10.19.1: icmp_seq=7 ttl=63 time=50679 ms
+64 bytes from 10.10.19.1: icmp_seq=44 ttl=63 time=13576 ms
+64 bytes from 10.10.19.1: icmp_seq=45 ttl=63 time=13831 ms
+64 bytes from 10.10.19.1: icmp_seq=8 ttl=63 time=52977 ms
+
+--- 10.10.19.1 ping statistics ---
+50 packets transmitted, 5 received, 90% packet loss, time 50182ms
+rtt min/avg/max/mdev = 13334.094/28879.907/52977.939/18752.457 ms, pipe 44

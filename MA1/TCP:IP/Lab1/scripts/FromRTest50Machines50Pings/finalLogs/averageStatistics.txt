@@ -1,0 +1,4 @@
+Stats for 50 PCs in star topology, with 50 pings issued in a FromR test way.
+Average without taking in account Loss : 17.8601632653
+Average with weight of Loss : 17.50296
+Average of Packet Loss : 0.0

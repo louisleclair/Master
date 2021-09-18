@@ -1,0 +1,48 @@
+--- 10.10.10.1 ping statistics ---
+50 packets transmitted, 1 received, 98% packet loss, time 50177ms
+rtt min/avg/max/mdev = 59703.570/59703.570/59703.570/0.000 ms, pipe 50
+--- 10.10.12.1 ping statistics ---
+50 packets transmitted, 1 received, +1 errors, 98% packet loss, time 50152ms
+rtt min/avg/max/mdev = 16980.171/16980.171/16980.171/0.000 ms, pipe 11
+--- 10.10.13.1 ping statistics ---
+50 packets transmitted, 2 received, 96% packet loss, time 50182ms
+rtt min/avg/max/mdev = 54117.057/55865.659/57614.262/1748.618 ms, pipe 49
+--- 10.10.14.1 ping statistics ---
+50 packets transmitted, 0 received, 100% packet loss, time 50181ms
+
+--- 10.10.15.1 ping statistics ---
+50 packets transmitted, 0 received, 100% packet loss, time 50167ms
+
+--- 10.10.16.1 ping statistics ---
+50 packets transmitted, 0 received, 100% packet loss, time 50177ms
+
+--- 10.10.17.1 ping statistics ---
+50 packets transmitted, 0 received, 100% packet loss, time 50162ms
+
+--- 10.10.18.1 ping statistics ---
+50 packets transmitted, 0 received, 100% packet loss, time 50176ms
+
+--- 10.10.19.1 ping statistics ---
+50 packets transmitted, 5 received, 90% packet loss, time 50158ms
+rtt min/avg/max/mdev = 15808.286/24029.507/52558.259/14286.679 ms, pipe 44
+--- 10.10.3.1 ping statistics ---
+50 packets transmitted, 0 received, 100% packet loss, time 50163ms
+
+--- 10.10.4.1 ping statistics ---
+50 packets transmitted, 1 received, 98% packet loss, time 50161ms
+rtt min/avg/max/mdev = 54516.354/54516.354/54516.354/0.000 ms, pipe 45
+--- 10.10.5.1 ping statistics ---
+50 packets transmitted, 0 received, 100% packet loss, time 50183ms
+
+--- 10.10.6.1 ping statistics ---
+50 packets transmitted, 1 received, 98% packet loss, time 50165ms
+rtt min/avg/max/mdev = 54920.452/54920.452/54920.452/0.000 ms, pipe 45
+--- 10.10.7.1 ping statistics ---
+50 packets transmitted, 1 received, 98% packet loss, time 50167ms
+rtt min/avg/max/mdev = 53859.109/53859.109/53859.109/0.000 ms, pipe 45
+--- 10.10.8.1 ping statistics ---
+50 packets transmitted, 0 received, 100% packet loss, time 50168ms
+
+--- 10.10.9.1 ping statistics ---
+50 packets transmitted, 0 received, 100% packet loss, time 50152ms
+

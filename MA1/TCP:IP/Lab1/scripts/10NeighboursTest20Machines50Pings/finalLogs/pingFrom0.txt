@@ -1,0 +1,3 @@
+--- 10.10.15.1 ping statistics ---
+50 packets transmitted, 44 received, 12% packet loss, time 50020ms
+rtt min/avg/max/mdev = 0.033/360.965/5487.099/1115.903 ms, pipe 6

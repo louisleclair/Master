@@ -1,0 +1,49 @@
+PING 10.10.14.1 (10.10.14.1) 56(84) bytes of data.
+64 bytes from 10.10.14.1: icmp_seq=1 ttl=63 time=12306 ms
+64 bytes from 10.10.14.1: icmp_seq=8 ttl=63 time=5713 ms
+From 10.10.11.1 icmp_seq=12 Destination Host Unreachable
+64 bytes from 10.10.14.1: icmp_seq=5 ttl=63 time=9788 ms
+64 bytes from 10.10.14.1: icmp_seq=3 ttl=63 time=12913 ms
+64 bytes from 10.10.14.1: icmp_seq=6 ttl=63 time=10235 ms
+64 bytes from 10.10.14.1: icmp_seq=2 ttl=63 time=15165 ms
+64 bytes from 10.10.14.1: icmp_seq=16 ttl=63 time=1134 ms
+64 bytes from 10.10.14.1: icmp_seq=17 ttl=63 time=134 ms
+64 bytes from 10.10.14.1: icmp_seq=7 ttl=63 time=10335 ms
+64 bytes from 10.10.14.1: icmp_seq=4 ttl=63 time=14010 ms
+64 bytes from 10.10.14.1: icmp_seq=18 ttl=63 time=0.086 ms
+64 bytes from 10.10.14.1: icmp_seq=19 ttl=63 time=0.086 ms
+64 bytes from 10.10.14.1: icmp_seq=20 ttl=63 time=0.067 ms
+64 bytes from 10.10.14.1: icmp_seq=21 ttl=63 time=0.058 ms
+64 bytes from 10.10.14.1: icmp_seq=22 ttl=63 time=0.232 ms
+64 bytes from 10.10.14.1: icmp_seq=23 ttl=63 time=0.076 ms
+64 bytes from 10.10.14.1: icmp_seq=24 ttl=63 time=0.766 ms
+64 bytes from 10.10.14.1: icmp_seq=25 ttl=63 time=0.316 ms
+64 bytes from 10.10.14.1: icmp_seq=26 ttl=63 time=0.035 ms
+64 bytes from 10.10.14.1: icmp_seq=27 ttl=63 time=0.191 ms
+64 bytes from 10.10.14.1: icmp_seq=28 ttl=63 time=0.076 ms
+64 bytes from 10.10.14.1: icmp_seq=29 ttl=63 time=0.055 ms
+64 bytes from 10.10.14.1: icmp_seq=30 ttl=63 time=0.033 ms
+64 bytes from 10.10.14.1: icmp_seq=31 ttl=63 time=0.156 ms
+64 bytes from 10.10.14.1: icmp_seq=32 ttl=63 time=0.062 ms
+64 bytes from 10.10.14.1: icmp_seq=33 ttl=63 time=0.125 ms
+64 bytes from 10.10.14.1: icmp_seq=34 ttl=63 time=0.039 ms
+64 bytes from 10.10.14.1: icmp_seq=35 ttl=63 time=0.066 ms
+64 bytes from 10.10.14.1: icmp_seq=36 ttl=63 time=0.036 ms
+64 bytes from 10.10.14.1: icmp_seq=37 ttl=63 time=0.043 ms
+64 bytes from 10.10.14.1: icmp_seq=38 ttl=63 time=0.131 ms
+64 bytes from 10.10.14.1: icmp_seq=39 ttl=63 time=0.068 ms
+64 bytes from 10.10.14.1: icmp_seq=40 ttl=63 time=0.147 ms
+64 bytes from 10.10.14.1: icmp_seq=41 ttl=63 time=0.176 ms
+64 bytes from 10.10.14.1: icmp_seq=42 ttl=63 time=0.173 ms
+64 bytes from 10.10.14.1: icmp_seq=43 ttl=63 time=0.163 ms
+64 bytes from 10.10.14.1: icmp_seq=44 ttl=63 time=0.386 ms
+64 bytes from 10.10.14.1: icmp_seq=45 ttl=63 time=0.209 ms
+64 bytes from 10.10.14.1: icmp_seq=46 ttl=63 time=0.148 ms
+64 bytes from 10.10.14.1: icmp_seq=47 ttl=63 time=0.061 ms
+64 bytes from 10.10.14.1: icmp_seq=48 ttl=63 time=0.085 ms
+64 bytes from 10.10.14.1: icmp_seq=49 ttl=63 time=0.225 ms
+64 bytes from 10.10.14.1: icmp_seq=50 ttl=63 time=0.034 ms
+
+--- 10.10.14.1 ping statistics ---
+50 packets transmitted, 43 received, +1 errors, 14% packet loss, time 49491ms
+rtt min/avg/max/mdev = 0.033/2133.565/15165.964/4549.748 ms, pipe 15

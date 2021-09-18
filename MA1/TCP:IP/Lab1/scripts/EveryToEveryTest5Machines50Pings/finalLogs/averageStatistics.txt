@@ -1,0 +1,4 @@
+Stats for 5 PCs in star topology, with 50 pings issued in a EveryToEvery test way.
+Average without taking in account Loss : 9.05789473684
+Average with weight of Loss : 8.605
+Average of Packet Loss : 0.0

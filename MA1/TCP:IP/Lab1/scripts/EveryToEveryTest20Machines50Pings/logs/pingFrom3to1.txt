@@ -1,0 +1,37 @@
+PING 10.10.1.1 (10.10.1.1) 56(84) bytes of data.
+From 10.10.3.254 icmp_seq=1 Destination Host Unreachable
+From 10.10.3.254 icmp_seq=2 Destination Host Unreachable
+From 10.10.3.254 icmp_seq=3 Destination Host Unreachable
+From 10.10.3.254 icmp_seq=20 Destination Host Unreachable
+64 bytes from 10.10.1.1: icmp_seq=23 ttl=63 time=3321 ms
+64 bytes from 10.10.1.1: icmp_seq=24 ttl=63 time=2526 ms
+64 bytes from 10.10.1.1: icmp_seq=26 ttl=63 time=611 ms
+64 bytes from 10.10.1.1: icmp_seq=25 ttl=63 time=1634 ms
+64 bytes from 10.10.1.1: icmp_seq=27 ttl=63 time=0.116 ms
+64 bytes from 10.10.1.1: icmp_seq=28 ttl=63 time=0.334 ms
+64 bytes from 10.10.1.1: icmp_seq=29 ttl=63 time=0.221 ms
+64 bytes from 10.10.1.1: icmp_seq=30 ttl=63 time=0.117 ms
+64 bytes from 10.10.1.1: icmp_seq=31 ttl=63 time=0.196 ms
+64 bytes from 10.10.1.1: icmp_seq=32 ttl=63 time=0.057 ms
+64 bytes from 10.10.1.1: icmp_seq=33 ttl=63 time=0.136 ms
+64 bytes from 10.10.1.1: icmp_seq=34 ttl=63 time=0.185 ms
+64 bytes from 10.10.1.1: icmp_seq=35 ttl=63 time=0.370 ms
+64 bytes from 10.10.1.1: icmp_seq=36 ttl=63 time=0.097 ms
+64 bytes from 10.10.1.1: icmp_seq=37 ttl=63 time=0.051 ms
+64 bytes from 10.10.1.1: icmp_seq=38 ttl=63 time=0.053 ms
+64 bytes from 10.10.1.1: icmp_seq=39 ttl=63 time=0.091 ms
+64 bytes from 10.10.1.1: icmp_seq=40 ttl=63 time=0.205 ms
+64 bytes from 10.10.1.1: icmp_seq=41 ttl=63 time=0.092 ms
+64 bytes from 10.10.1.1: icmp_seq=42 ttl=63 time=0.201 ms
+64 bytes from 10.10.1.1: icmp_seq=43 ttl=63 time=0.086 ms
+64 bytes from 10.10.1.1: icmp_seq=44 ttl=63 time=0.040 ms
+64 bytes from 10.10.1.1: icmp_seq=45 ttl=63 time=0.086 ms
+64 bytes from 10.10.1.1: icmp_seq=46 ttl=63 time=0.090 ms
+64 bytes from 10.10.1.1: icmp_seq=47 ttl=63 time=0.038 ms
+64 bytes from 10.10.1.1: icmp_seq=48 ttl=63 time=0.045 ms
+64 bytes from 10.10.1.1: icmp_seq=49 ttl=63 time=0.158 ms
+64 bytes from 10.10.1.1: icmp_seq=50 ttl=63 time=1.24 ms
+
+--- 10.10.1.1 ping statistics ---
+50 packets transmitted, 28 received, +4 errors, 44% packet loss, time 49893ms
+rtt min/avg/max/mdev = 0.038/289.195/3321.094/804.333 ms, pipe 6

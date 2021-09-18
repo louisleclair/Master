@@ -1,0 +1,6 @@
+PING 10.10.16.1 (10.10.16.1) 56(84) bytes of data.
+64 bytes from 10.10.16.1: icmp_seq=6 ttl=63 time=50282 ms
+
+--- 10.10.16.1 ping statistics ---
+50 packets transmitted, 1 received, 98% packet loss, time 50153ms
+rtt min/avg/max/mdev = 50282.866/50282.866/50282.866/0.000 ms, pipe 45

@@ -1,0 +1,4 @@
+Stats for 15 PCs in star topology, with 50 pings issued in a 7Neighbours test way.
+Average without taking in account Loss : 82.0090504202
+Average with weight of Loss : 82.2563678879
+Average of Packet Loss : 1.29411764706

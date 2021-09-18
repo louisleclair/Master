@@ -1,0 +1,17 @@
+PING 10.10.7.1 (10.10.7.1) 56(84) bytes of data.
+From 10.10.29.1 icmp_seq=9 Destination Host Unreachable
+From 10.10.29.1 icmp_seq=10 Destination Host Unreachable
+From 10.10.29.1 icmp_seq=12 Destination Host Unreachable
+From 10.10.29.1 icmp_seq=13 Destination Host Unreachable
+From 10.10.29.1 icmp_seq=15 Destination Host Unreachable
+From 10.10.29.1 icmp_seq=16 Destination Host Unreachable
+From 10.10.29.1 icmp_seq=34 Destination Host Unreachable
+From 10.10.29.254 icmp_seq=4 Destination Host Unreachable
+From 10.10.29.254 icmp_seq=37 Destination Host Unreachable
+From 10.10.29.254 icmp_seq=38 Destination Host Unreachable
+64 bytes from 10.10.7.1: icmp_seq=1 ttl=63 time=54553 ms
+64 bytes from 10.10.7.1: icmp_seq=5 ttl=63 time=53489 ms
+
+--- 10.10.7.1 ping statistics ---
+50 packets transmitted, 2 received, +10 errors, 96% packet loss, time 49724ms
+rtt min/avg/max/mdev = 53489.197/54021.413/54553.629/532.216 ms, pipe 50

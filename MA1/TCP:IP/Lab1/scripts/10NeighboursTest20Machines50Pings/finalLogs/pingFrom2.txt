@@ -1,0 +1,3 @@
+--- 10.10.19.1 ping statistics ---
+50 packets transmitted, 44 received, 12% packet loss, time 49943ms
+rtt min/avg/max/mdev = 0.032/693.605/6119.627/1687.074 ms, pipe 7

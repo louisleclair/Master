@@ -1,0 +1,38 @@
+PING 10.10.27.1 (10.10.27.1) 56(84) bytes of data.
+From 10.10.26.1 icmp_seq=9 Destination Host Unreachable
+From 10.10.26.1 icmp_seq=10 Destination Host Unreachable
+From 10.10.26.1 icmp_seq=12 Destination Host Unreachable
+From 10.10.26.1 icmp_seq=21 Destination Host Unreachable
+From 10.10.26.1 icmp_seq=22 Destination Host Unreachable
+From 10.10.26.1 icmp_seq=24 Destination Host Unreachable
+From 10.10.26.1 icmp_seq=25 Destination Host Unreachable
+From 10.10.26.1 icmp_seq=27 Destination Host Unreachable
+From 10.10.26.1 icmp_seq=28 Destination Host Unreachable
+From 10.10.26.1 icmp_seq=30 Destination Host Unreachable
+From 10.10.26.1 icmp_seq=31 Destination Host Unreachable
+64 bytes from 10.10.27.1: icmp_seq=1 ttl=63 time=41493 ms
+64 bytes from 10.10.27.1: icmp_seq=42 ttl=63 time=0.136 ms
+64 bytes from 10.10.27.1: icmp_seq=4 ttl=63 time=39099 ms
+64 bytes from 10.10.27.1: icmp_seq=43 ttl=63 time=0.110 ms
+64 bytes from 10.10.27.1: icmp_seq=8 ttl=63 time=36063 ms
+64 bytes from 10.10.27.1: icmp_seq=44 ttl=63 time=0.149 ms
+64 bytes from 10.10.27.1: icmp_seq=45 ttl=63 time=0.775 ms
+64 bytes from 10.10.27.1: icmp_seq=46 ttl=63 time=0.339 ms
+64 bytes from 10.10.27.1: icmp_seq=47 ttl=63 time=0.354 ms
+64 bytes from 10.10.27.1: icmp_seq=5 ttl=63 time=42606 ms
+64 bytes from 10.10.27.1: icmp_seq=48 ttl=63 time=0.141 ms
+64 bytes from 10.10.27.1: icmp_seq=49 ttl=63 time=88.4 ms
+64 bytes from 10.10.27.1: icmp_seq=36 ttl=63 time=13492 ms
+64 bytes from 10.10.27.1: icmp_seq=50 ttl=63 time=0.144 ms
+64 bytes from 10.10.27.1: icmp_seq=37 ttl=63 time=13258 ms
+64 bytes from 10.10.27.1: icmp_seq=38 ttl=63 time=14257 ms
+64 bytes from 10.10.27.1: icmp_seq=6 ttl=63 time=47035 ms
+64 bytes from 10.10.27.1: icmp_seq=39 ttl=63 time=15574 ms
+64 bytes from 10.10.27.1: icmp_seq=40 ttl=63 time=16211 ms
+64 bytes from 10.10.27.1: icmp_seq=41 ttl=63 time=16767 ms
+64 bytes from 10.10.27.1: icmp_seq=7 ttl=63 time=52189 ms
+64 bytes from 10.10.27.1: icmp_seq=2 ttl=63 time=57693 ms
+
+--- 10.10.27.1 ping statistics ---
+50 packets transmitted, 22 received, +11 errors, 56% packet loss, time 49616ms
+rtt min/avg/max/mdev = 0.110/18446.976/57693.497/19647.109 ms, pipe 49

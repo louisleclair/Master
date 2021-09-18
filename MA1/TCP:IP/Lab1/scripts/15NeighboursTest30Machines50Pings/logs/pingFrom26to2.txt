@@ -1,0 +1,36 @@
+PING 10.10.2.1 (10.10.2.1) 56(84) bytes of data.
+From 10.10.26.1 icmp_seq=9 Destination Host Unreachable
+From 10.10.26.1 icmp_seq=10 Destination Host Unreachable
+From 10.10.26.1 icmp_seq=12 Destination Host Unreachable
+From 10.10.26.1 icmp_seq=13 Destination Host Unreachable
+From 10.10.26.1 icmp_seq=21 Destination Host Unreachable
+From 10.10.26.1 icmp_seq=22 Destination Host Unreachable
+From 10.10.26.1 icmp_seq=24 Destination Host Unreachable
+From 10.10.26.1 icmp_seq=25 Destination Host Unreachable
+From 10.10.26.1 icmp_seq=27 Destination Host Unreachable
+From 10.10.26.1 icmp_seq=28 Destination Host Unreachable
+From 10.10.26.254 icmp_seq=8 Destination Host Unreachable
+From 10.10.26.1 icmp_seq=31 Destination Host Unreachable
+64 bytes from 10.10.2.1: icmp_seq=1 ttl=63 time=41956 ms
+64 bytes from 10.10.2.1: icmp_seq=43 ttl=63 time=0.077 ms
+64 bytes from 10.10.2.1: icmp_seq=3 ttl=63 time=40565 ms
+64 bytes from 10.10.2.1: icmp_seq=6 ttl=63 time=37800 ms
+64 bytes from 10.10.2.1: icmp_seq=44 ttl=63 time=0.087 ms
+64 bytes from 10.10.2.1: icmp_seq=45 ttl=63 time=0.991 ms
+64 bytes from 10.10.2.1: icmp_seq=46 ttl=63 time=0.121 ms
+64 bytes from 10.10.2.1: icmp_seq=2 ttl=63 time=44800 ms
+64 bytes from 10.10.2.1: icmp_seq=7 ttl=63 time=39832 ms
+64 bytes from 10.10.2.1: icmp_seq=47 ttl=63 time=0.229 ms
+64 bytes from 10.10.2.1: icmp_seq=4 ttl=63 time=43882 ms
+64 bytes from 10.10.2.1: icmp_seq=48 ttl=63 time=0.085 ms
+64 bytes from 10.10.2.1: icmp_seq=49 ttl=63 time=125 ms
+64 bytes from 10.10.2.1: icmp_seq=50 ttl=63 time=0.052 ms
+64 bytes from 10.10.2.1: icmp_seq=39 ttl=63 time=15212 ms
+64 bytes from 10.10.2.1: icmp_seq=5 ttl=63 time=50488 ms
+64 bytes from 10.10.2.1: icmp_seq=40 ttl=63 time=15914 ms
+64 bytes from 10.10.2.1: icmp_seq=41 ttl=63 time=16552 ms
+64 bytes from 10.10.2.1: icmp_seq=42 ttl=63 time=18841 ms
+
+--- 10.10.2.1 ping statistics ---
+50 packets transmitted, 19 received, +12 errors, 62% packet loss, time 49610ms
+rtt min/avg/max/mdev = 0.052/19261.795/50488.274/19149.803 ms, pipe 46
