@@ -1,0 +1,60 @@
+The target actually writes the given input argument into a buffer, but if the
+input argument is longer than the size of the buffer, it will only copy the first 
+241 (1-byte) elements of the input argument. But since the target code allocated 
+only 240 1-bytes elements to the buffer, we can exploit this code via a 
+vulnerability called the "Off-By-One Overflow". When the source string length is 
+equal to the destination buffer length, a single NULL byte can get copied just 
+above the destination buffer. Here, since the destination buffer is located in 
+the stack, the single NULL byte could overwrite the least significant byte of 
+caller’s EBP stored in the stack and this could lead to arbitrary code execution.
+
+The buffer "buf" is created in the function "bar", so we will set a breakpoint 
+at line 22 which is just after the execution of the "nstrcpy" function, where 
+the buffer is filled. We do that to actually retrieve the address in memory 
+where the buffer starts (at which address is located the first element of the 
+buffer). After reaching this breakpoint when executing the code using GDB, 
+we type the command "i r" to get the location of the ESP and EBP pointers. 
+The ESP pointer is the current stack pointer (current top of the stack) actually 
+pointing somewhere in the "bar" stack frame, and the EBP pointer is the base 
+pointer for the current stack frame, and then points to the last address of the 
+"bar" stack frame. The command "i r" gives ESP = 0xbffffc70 and 
+EBP = 0xbffffd78. This means the content of the buffer is located between these
+two addresses. We can get the address where is located the first element of the 
+buffer "buf" by entering the command "x/100x buf", and we can see that the
+buffer starts at 0xbffffc88. Notice that after the last element of the buffer,
+we should be at the location of the EBP pointer, which is the case since
+0xbffffd78 - 0xbffffc88 = 0xf0 = 240 which is indeed the number of allocated
+elements (240 elements of 1 bytes) for the buffer. This means that copying 241 
+elements to "buf" will lead to a buffer overflow and then allow us to change the 
+least significant byte of the value pointed by the EBP of the "bar" stack frame.
+
+We will then submit as input an array of 241 1-byte characters. The last byte (at 
+position 240 of the array) will be the NULL byte '\0' so that the value pointed 
+by EBP will now become 0xbffffd00. Since the first element of the buffer is 
+located at 0xbffffc88, the address 0xbffffd00 is part of destination buffer "buf" 
+and then is a stack location over which an attacker has control, and so can 
+achieve arbitrary code execution since he has then control over the instruction 
+pointer EIP (contains the address of next instruction to be executed). After the 
+EBP of "bar" gets overwritten by the function "nstrcpy" and returning to the next 
+"bar" instruction, since the latter is a "leave" according to the command 
+"disassemble bar", it will unwind this function’s stack space and restores EBP, 
+and so ESP will become at this moment EBP + 4. The following instruction is 
+"ret", still according to "disassemble bar" command, and the program will then 
+return to the instruction located at the current ESP. By overwritting EBP least 
+significant byte by the NULL byte, ESP will point at 0xbffffd04, which must then 
+contain the return address to our shellcode. To find the offset to the location 
+(0xbffffd04) of this new return address from the beginning of the buffer 
+(0xbffffc88), we have the following calculation : 
+0xbffffd04 – 0xbffffc88 = 0x7c = 124. Then this means the new return 
+address (that will be the one sending the program to the location of our 
+shellcode) will be stored at the positions 124, 125, 126 and 127 of our input 
+array (the first position is the position 0). We then have to write the content 
+of our "shellcode" array in the buffer starting at this return address. We 
+decided to write the content of our "shellcode" array starting from the address 
+0xbffffd48 (so at position 192 of the input array), then this means we will have
+input[124] = '\x48', input[125] = '\xfd', input[126] = '\xff' and 
+input[127] = '\xbf' since we are working in a little-endian fashion and so the 
+return address will be 0xbffffd48 which will then yield our shell. The other 
+elements of the input array will be anything (we chose to put 'f' characters, 
+which each will be displayed as "66" since their ASCII hexadecimal 
+representation is 0x66).

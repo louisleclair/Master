@@ -1,0 +1,70 @@
+The target uses the function "memcpy". The function's signature is 
+void *memcpy(void *str1, const void *str2, size_t n) and then copies n characters
+from memory area str2 to memory area str1. This means we can control the bounds,
+and, since the function terminates only when n characters have been copied, if n 
+is sufficiently large, and if the source input is bigger than the destination 
+buffer, the remaining bytes overflowing in the memory will override important 
+areas of this memory.
+
+The target retrieves via the function "strtoul" an integer "count" and an array of
+characters. It then creates a buffer of "struct widget_t" and allocates 240 slots 
+to it. Since a "struct widget_t" element is 20 bytes long, 4800 bytes has been 
+allocated to the buffer. It then copies count * sizeof(struct widget_t) bytes
+from the array of character retrieved via "strtoul" (it then copies the count * 20 
+first bytes). Since the buffer "buf" is created in the function "foo", we will 
+set a breakpoint at line 20 which is just after the execution of the "memcpy" 
+function, where the buffer is filled. We do that to actually retrieve the address 
+in memory where the buffer starts (at which address is located the first element 
+of the buffer). After reaching this breakpoint when executing the code using GDB, 
+we type the command "i r" to get the location of the ESP and EBP pointers. The ESP 
+pointer is the current stack pointer (current top of the stack) actually pointing 
+somewhere in the "foo" stack frame, and the EBP pointer is the base pointer for 
+the current stack frame, and then points to the last address of the "foo" stack 
+frame. When we call a function, the return address will always be 4 bytes after 
+the base pointer (at EBP + 4). This means that copying more than 4800 bytes to 
+"buf" will lead to a buffer overflow and then allow us to change the return
+address of the "foo" function. The command "i r" gives ESP = 0xbfffd8b0 and 
+EBP = 0xbfffeb88. This means the content of the buffer is located between these
+two addresses, and the return address (that we then want to modify) is located 
+at 0xbfffeb8c. We can get the address where is located the first element of the 
+buffer "buf" by entering the command "x/100x buf", and we can see that the
+buffer starts at 0xbfffd8c8. Notice that after the last element of the buffer,
+we should be at the location of the EBP pointer, which is the case since
+0xbfffeb88 - 0xbfffd8c8 = 0x12c0 = 4800 which is indeed the number of allocated
+elements (4800 elements of 1 bytes, or 240 elements of 20 bytes) for the buffer.
+A solution could then have been to give a "count" value so that count * 20 equals
+4808 and overwrite the return address with the bytes at position 4804, 4805, 4806
+and 4807 (with first byte of the array of character at position 0) of the array 
+of characters after the comma in the input argument. Those 4 bytes would represent 
+the chosen return address where our shellcode would be located.
+
+The problem is the "if" statement : we can't give to "count" a value greater than 
+239. This means, "memcpy" would copy only the first 4780 bytes of our array of 
+characters, which is not enough to reach and overwrite the return address.
+A solution would be to produce an overflow when calculating count * 20 (the number 
+of bytes to copy) so that it gives a value higher than 4780 but with a count value 
+lower than 240. The only way is to give "count" a very high negative value so that
+it passes the "if" statement and when calculating count * 20 the minimum possible 
+value for an integer in a computer program (-2147483648) is exceeded, which would 
+then possibly give a positive value. With count = -214748124 we obtain 
+count * 20 = 4818 which is the minimum possible acceptable value for the number 
+of bytes to write with "memcpy". We want to write 4808 characters (the part 
+after the comma following the input format) and "-214748124," is 11 bytes 
+(11 characters long), so we create an input array of 4819 bytes to store 
+everything we need to overwrite the return address and yield our shellcode.
+The characters that will be written at the first position of "buf" is at position
+11 of the input array (because the first 11 characters of the input array are 
+"-214748124,"), and we actually decided to write the content of our "shellcode" 
+array starting from the address 0xbfffeb58, which is 
+0xbfffeb58 - 0xbfffd8c8 = 0x1290 = 4752 bytes after the beginning of the buffer.
+This means the content of the "shellcode" array will be written from position
+4752 + 11 = 4763 of the input array. Finally, since the return address we want
+to overwrite is located 4804 bytes after the beginning of the buffer, we will 
+write the 4 bytes (of the new return address) starting from position 
+4804 + 11 = 4815 of the input array. We want the return address to be 
+0xbfffeb58 so we will have input[4815] = '\x58', input[4816] = '\xeb', 
+input[4817] = '\xff' and input[4818] = '\xbf' since we are working in a 
+little-endian fashion, and so the return address will be 0xbffffd58 which will 
+then yield our shell. The other elements of the input array will be anything 
+(we chose to put 'f' characters, which each will be displayed as "66" since 
+their ASCII hexadecimal representation is 0x66).

@@ -1,0 +1,50 @@
+The target uses the function "strcpy". When looking at its prototype, 
+which is char *strcpy(char *dest, const char *src), we can see that 
+there is no actual check for bounds, and, since the function terminates 
+copying the string as soon as it encouters a null character, if the 
+source is bigger than the destination then the remaining bytes will 
+overflow in the memory and will possibly override important areas of 
+this memory.
+
+The target copies the input argument argv[1] into a buffer of "char" (1 byte)
+of size 240. Since the buffer "buf" is created in the function "foo", we will 
+set a breakpoint at line 15 which is just after the execution of the "bar" 
+function, where the buffer is filled with "strcpy". We do that to actually
+retrieve the address in memory where the buffer starts (at which address is
+located the first element of the buffer). After reaching this breakpoint
+when executing the code using GDB, we type the command "i r" to get the 
+location of the ESP and EBP pointers. The ESP pointer is the current stack
+pointer (current top of the stack) actually pointing somewhere in the "foo" 
+stack frame, and the EBP pointer is the base pointer for the current stack 
+frame, and then points to the last address of the "foo" stack frame. When 
+we call a function, the return address will always be 4 bytes after the base
+pointer (at EBP + 4). This means that copying more than 240 elements to 
+"buf" will lead to a buffer overflow and then allow us to change the return
+address of the "foo" function. The command "i r" gives ESP = 0xbffffc70 and 
+EBP = 0xbffffd78. This means the content of the buffer is located between these
+two addresses, and the return address (that we then want to modify) is located 
+at 0xbffffd7c. We can get the address where is located the first element of the 
+buffer "buf" by entering the command "x/100x buf", and we can see that the
+buffer starts at 0xbffffc88. Notice that after the last element of the buffer,
+we should be at the location of the EBP pointer, which is the case since
+0xbffffd78 - 0xbffffc88 = 0xf0 = 240 which is indeed the number of allocated
+elements (240 elements of 1 bytes) for the buffer.
+
+We will then submit as input (and source for the "strcpy" function) an array
+of 249 1-byte characters. The last byte (at position 248 of the array) will be 
+the NULL byte '\0' so that "strcpy" will stop copying immediately after having 
+overwritten the return address. Indeed, the new return address (that will be the 
+one sending the program to the location of our shellcode) will be stored at the 
+positions 244, 245, 246 and 247 of our input array (the first position is the 
+position 0). We wrote the content of our shellcode array (of length 45) at the 
+beginning of the buffer. The remaining elements (position 45 to 239) will be 
+anything (we chose to put 'f' characters, which each will be displayed as "66" 
+since their ASCII hexadecimal representation is 0x66) and will be written in the 
+remaining 195 slots of the buffer "buf". The elements at position 240, 241, 242, 
+243 will also be "f" and will overwrite the value pointed by EBP. Positions 244, 
+245, 246 and 247 of the input array are then the ones we have to focus on. 
+Since we decided to write the content of our "shellcode" array starting from 
+the address 0xbffffc88 (beginning of the buffer), this means we will have 
+input[244] = '\x88', input[245] = '\xfc', input[246] = '\xff' and 
+input[247] = '\xbf' since we are working in a little-endian fashion, and so the 
+return address will be 0xbffffc88 which will then yield our shell.
