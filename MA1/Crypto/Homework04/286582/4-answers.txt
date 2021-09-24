@@ -1,0 +1,9 @@
+Group = 4
+Worked with (list all): 
+Q1a_msg = Mike voted for Papy McDonald
+Q1b_r = 104245606143392335150478362164925327589750858310464075304690629020682875535651
+Q1b_s = 59187235682064690655257954772825893763386714047176301163885746485576826951564
+Q2_pt = "It is always not easy to select a message with a random word such as impious. Actually, I can just copy and paste some known dialgoues while replacing one word. But, I didn't do cause I don't want to find it. "
+Q3a_ct = "11011101000100011100111000001000110001000011010010100010100001011011000011100000111111110010111001110111111100101011010011110100"
+Q3b_pt2 = "marinadinghoopin"
+Q3c_pt2 = "exceededexciteme"

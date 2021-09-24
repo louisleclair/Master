@@ -1,0 +1,8 @@
+Group=12345
+Q1a_msg = Angus voted for Papy McDonald
+Q1b_r = 69735868718197032259278345102964915190720911194711866313441776018012643119942
+Q1b_s = 102043768804399128621445601975715145269057931094511006053788533327598755706917
+Q2_pt="It is always not easy to select a message with a random word such as arboreta. Actually, I can just copy and paste some known dialgoues while replacing one word. But, I didn't do cause I don't want to find it. "
+Q3a_ct =  "11001110011001010011101101011100110011000001100111011000000011011101100101101000001111100010111111010101111111010101001101001100"
+Q3b_pt2 =  "advertisesamorou"
+Q3c_pt2 =  "nonwhitetomahawk"
