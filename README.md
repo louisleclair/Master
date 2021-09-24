@@ -4,7 +4,7 @@ Herewith most of my work done during my first year of master at EPFL hoping I ca
 
 In MA1:
 
-- TCP/IP (some documents might be missing but at the only the PDF is important, In hw03, I removed rockyou.txt dictionary and you might need it.)
+- TCP/IP (some documents might be missing but at the only the PDF is important, In hw03, I removed __rockyou.txt__ dictionary and you might need it.)
 - Cryptography (The homework might change so I don’t know if it will be very useful)
 - ISP 
 
