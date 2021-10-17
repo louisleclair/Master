@@ -14,4 +14,4 @@ In MA2:
 - Database
 - Advanced Cryptography
 
-I don’t know if it will be useful in the future but if it is that the goal and if you have some problems or questions you can always ask me.
+I hope it will be useful :)
